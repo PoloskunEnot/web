@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>MY_FIRST_WEB_PAGE</title>
+    <style>
+        #header {
+            height: 200px;
+            background-image: url(http://www.hunstory.ru/images/stories/hunstory/050411/132.png),
+                              url("https://45.media.tumblr.com/6ef284c483e8e460c8ca222d9fd32181/tumblr_mvw9vcWHTd1qjjvnxo1_500.gif");
+            background-repeat: repeat-y, repeat-x;
+            background-position: left, right;
+            background-size: 20%;
+
+
+        }
+
+        .wrapper {
+            line-height: 1em;
+            columns: 300px auto;
+            -moz-columns: 200px auto;
+            -webkit-columns: 200px auto;
+            break-after: column;
+        }
+        .wrapper div {
+            width: 250px;
+            display: inline-block;
+            
+            margin: 10px 20px;
+            vertical-align: top;
+        }
+        .small {
+            height: 200px;
+            background-image: url("https://image.freepik.com/free-icon/_318-101489.jpg");
+            background-size: 209px ;
+        }
+        .medium {
+            height: 280px;
+            background-image: url("http://webdiscover.ru/uploads/images/2013-08/10997_137726320137.jpg");
+            background-size: 210px;
+        }
+        .big {
+            height: 340px;
+            background-image: url("http://cs309730.vk.me/u174968959/a_d8ae09a2.jpg");
+            background-size: 220px;
+
+        }
+
+        /*до сюда*/
+
+
+
+        #header_menu {
+            font-size: 30pt;
+            width: 100%;
+            background-color: lightgrey;
+            background-size: contain;
+            border: 3px inset black;
+
+        }
+        .header_menu {
+            position: fixed;
+            top: 0px;
+            border: 1px inset black;
+        }
+        #left-menu {
+            height: 100%;
+            width: 19%;
+            float: left;
+            background-color: white;
+            background-size: cover;
+            font-size: 35px;
+            border: dotted;
+            padding: 5px;
+            margin: 0px;
+
+        }
+        body {
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: darkgray;
+            background-size: cover;
+        }
+        .shadowtext {
+            font-family: "Comic Sans MS";
+            text-shadow: 2px 4px 2px black, 0 0 1em grey;
+            color: black;
+            font-size: 1em;
+        }
+
+        .ordinarytext{
+            font-family: "Brush Script MT";
+            color: black;
+            font-stretch: extra-expanded;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="header">
+</div>
+
+
+<div id="header_menu">
+    <div class="shadowtext">
+        I"M ENOT YOU ARE NOT
+    </div>
+</div>
+
+<div id="left-menu">
+    <p class="ordinarytext">MENU</p>
+    <hr>
+    <style>
+        p {
+            margin-left: 35%;
+        }
+        ul{
+            list-style: disc ;
+            list-style-position: inside;
+            padding-left: 50px;
+
+
+        }
+
+    </style>
+    <ul>
+    <li class="ordinarytext">pechen'ka 1</li>
+    <hr></hr>
+    <li class="ordinarytext">pechen'ka 2</li>
+    <hr></hr>
+    <li class="ordinarytext">pechen'ka 3</li>
+    <hr></hr>
+    <li class="ordinarytext">pechen'ka 4</li>
+    <hr></hr>
+    <li class="ordinarytext">pechen'ka 5</li>
+    </hr>
+</ul>
+</div>
+
+
+<div class="wrapper">
+    <div class="small"></div>
+    <div class="medium"></div>
+    <div class="big"></div>
+    <div class="small"></div>
+    <div class="big"></div>
+    <div class="medium"></div>
+    <div class="small"></div>
+    <div class="big"></div>
+    <div class="medium"></div>
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>
