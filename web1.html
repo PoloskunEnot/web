@@ -1,21 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!Doctype html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>animals</title>
 
-    <title>MY_FIRST_WEB_PAGE</title>
     <style>
-        #header {
+
+
+        #head{
+            height: 150px;
+            background-image: url("http://www.hunstory.ru/images/stories/hunstory/050411/132.png");
+            text-align:center;
+            color:white;
+            font-family: cursive;
+            font-size: 28px;
+            border: double;
+            border-color: black;
+        }
+
+        #left-panel{
+            float:left;
+            height: 300px;
+            width: 200px;
+            background: white;
+            font-size: 35px;
+            font-family: "Brush Script MT";
+            font-stretch: extra-expanded;
+            border: dotted;
+            padding: 10px;
+
+        }
+        #content{
+            margin-left: 150px;
+            background: blue;
+            height: 1800px;
+
+        }
+        .content{
             height: 200px;
-            background-image: url(http://www.hunstory.ru/images/stories/hunstory/050411/132.png),
-                              url("https://45.media.tumblr.com/6ef284c483e8e460c8ca222d9fd32181/tumblr_mvw9vcWHTd1qjjvnxo1_500.gif");
-            background-repeat: repeat-y, repeat-x;
-            background-position: left, right;
-            background-size: 20%;
+            width: 200px;
+            display: inline-table;
+            padding: 5px;
+            background-size: cover;
+            border: 1px inset black;
+        }
+        @media(max-width: 798px){
+            #left-panel{
+                display:none
+            }
+            #top-content{
+                margin-left: 0px !important;
+            }
+            #content{
+                margin-left: 0px !important;
+            }
+        }
 
 
+        #left {
+            padding-left: 0px;
+            display: inline;
+            margin-left: 0px;
+
+        }
+        li {
+            line-height: 50px;
+            font-size: 20px;
+
+
+        }
+
+        .ordinarytext {
+            font-family: "Brush Script MT";
+            color: black;
+        }
+
+        .shadowtext {
+            font-family: "Comic Sans MS";
+            text-shadow: 2px 4px 2px black, 0 0 1em grey;
+            color: black;
+            font-size: 5em;
         }
 
         .wrapper {
@@ -25,13 +89,7 @@
             -webkit-columns: 200px auto;
             break-after: column;
         }
-        .wrapper div {
-            width: 250px;
-            display: inline-block;
-            
-            margin: 10px 20px;
-            vertical-align: top;
-        }
+       
         .small {
             height: 200px;
             background-image: url("https://image.freepik.com/free-icon/_318-101489.jpg");
@@ -46,102 +104,59 @@
             height: 340px;
             background-image: url("http://cs309730.vk.me/u174968959/a_d8ae09a2.jpg");
             background-size: 220px;
-
         }
 
-        /*до сюда*/
-
-
-
-        #header_menu {
-            font-size: 30pt;
-            width: 100%;
-            background-color: lightgrey;
-            background-size: contain;
-            border: 3px inset black;
+        .header_top{
+            margin-left: 200px;
+            padding-top: 30px;
+            font-family: cursive;
+            font-size: 22px;
+        }
+        .text{
+            margin-left: 380px;
+            font-family: cursive;
+            font-size: 18px;
+        }
+        #top{
+            height: 108px;
+            background: lightgrey;
+            text-align: left;
+            padding-right: 10px;
+            border: double;
 
         }
-        .header_menu {
-            position: fixed;
-            top: 0px;
-            border: 1px inset black;
-        }
-        #left-menu {
-            height: 100%;
-            width: 19%;
-            float: left;
-            background-color: white;
-            background-size: cover;
-            font-size: 35px;
-            border: dotted;
-            padding: 5px;
-            margin: 0px;
-
-        }
-        body {
-            margin-top: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            background-color: darkgray;
-            background-size: cover;
-        }
-        .shadowtext {
-            font-family: "Comic Sans MS";
-            text-shadow: 2px 4px 2px black, 0 0 1em grey;
-            color: black;
-            font-size: 1em;
-        }
-
-        .ordinarytext{
-            font-family: "Brush Script MT";
-            color: black;
-            font-stretch: extra-expanded;
+        body{
+            max-width: 1500px;
+            margin: 0 auto 0 auto;
         }
 
     </style>
 </head>
-<body>
+<body id="body" style="background:white">
+<header id="head"></header>
+<div id="top">
+    <div class="shadowtext"> Funny Animals</div>
 
-<div id="header">
-</div>
 
-
-<div id="header_menu">
-    <div class="shadowtext">
-        I"M ENOT YOU ARE NOT
-    </div>
-</div>
-
-<div id="left-menu">
+<div id="left-panel"; style="padding-left: 10px";>
     <p class="ordinarytext">MENU</p>
-    <hr>
     <style>
-        p {
-            margin-left: 35%;
+    ul {
+        list-style: disc ;
+        list-style-position: inside;
+        padding-left: 50px;
         }
-        ul{
-            list-style: disc ;
-            list-style-position: inside;
-            padding-left: 50px;
-
-
-        }
-
     </style>
-    <ul>
-    <li class="ordinarytext">pechen'ka 1</li>
-    <hr></hr>
-    <li class="ordinarytext">pechen'ka 2</li>
-    <hr></hr>
-    <li class="ordinarytext">pechen'ka 3</li>
-    <hr></hr>
-    <li class="ordinarytext">pechen'ka 4</li>
-    <hr></hr>
-    <li class="ordinarytext">pechen'ka 5</li>
-    </hr>
-</ul>
+
+        <li><a href="#">Photogallary</a></li>
+        <li><a href="#">Videogallary</a></li>
+        <li><a href="#">FanArt</a></li>
+        <li><a href="#">links</a></li>
+    </ul>
 </div>
 
+</div>
+</div>
 
 <div class="wrapper">
     <div class="small"></div>
@@ -153,11 +168,18 @@
     <div class="small"></div>
     <div class="big"></div>
     <div class="medium"></div>
+    <div class="small"></div>
+    <div class="medium"></div>
+    <div class="big"></div>
+    <div class="small"></div>
+    <div class="big"></div>
+    <div class="medium"></div>
+    <div class="small"></div>
+    <div class="big"></div>
+    <div class="medium"></div>
 </div>
 
-</div>
-</div>
 
-
+</div>
 </body>
 </html>
